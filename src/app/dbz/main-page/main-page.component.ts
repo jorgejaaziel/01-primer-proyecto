@@ -47,5 +47,4 @@ export class MainPageComponent {
   cambiarNombre(event: any) {
     console.log(event)
   }
-
 }
