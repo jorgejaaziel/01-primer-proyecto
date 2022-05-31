@@ -10,7 +10,7 @@ import { Personaje } from '../interfaces/dbz.interfaces';
 })
 export class MainPageComponent {
 
-  personajes: Personaje[] = [
+  listaPersonajes: Personaje[] = [
     {
       nombre: 'Goku',
       poder: 1000
@@ -27,8 +27,14 @@ export class MainPageComponent {
 
   constructor() { }
 
-  nuevo: Personaje = {
+  nuevoPersonaje: Personaje = {
     nombre: 'Maestro',
     poder: 2000
+  }
+
+  agregarNuevoPersonaje(argumento: Personaje) {
+    console.log(argumento)
+    this.listaPersonajes.push(argumento);
+
   }
 }
